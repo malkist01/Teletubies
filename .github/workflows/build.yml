@@ -16,7 +16,8 @@ jobs:
           cd x/setup && bash android_build_env.sh
     - name: Building Kernel..
       run: |
-          chmod +x build.sh && build mido.sh
+          chmod +x build.sh
+          ./build.sh mido.sh
       shell: bash
       env:
          TZ: Asia/Jakarta
